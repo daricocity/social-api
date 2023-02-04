@@ -10,9 +10,9 @@ const cors = require('cors');
 
 // CORS
 const corsOptions ={
-    origin:'https://shocia.netlify.app', 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
+    origin: '*', 
+    credentials: true,            //access-control-allow-credentials:true
+    optionSuccessStatus: 200
 }
 app.use(cors(corsOptions));
 
